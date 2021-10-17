@@ -9,10 +9,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Create #1 Push On Master
-
-        //Create #1 Pull Request On Dev-CI Branch
 
         Toast.makeText(this, "Hey! Firebase distributions integrated successfully! :)", Toast.LENGTH_SHORT).show()
+
     }
 }
