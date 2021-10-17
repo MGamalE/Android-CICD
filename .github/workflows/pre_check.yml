@@ -1,0 +1,34 @@
+# This workflow to help you automate your building process
+
+name: Integrate Firebase Distributions + Github Actions
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+
+
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2.3.5
+        
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1
+        with:
+         java-version: 1.8
+        
+      - name: Build Lint
+        run: ./gradlew lintDebug
+    
+      - name: Upload Build Lint Report
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: index.html
+          path: app/build/reports/lint-report.html
+
+
