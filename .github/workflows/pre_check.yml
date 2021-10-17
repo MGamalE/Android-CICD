@@ -25,7 +25,7 @@ jobs:
       - name: Upload Build Lint Report
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: index.html
-          path: app/build/reports/lint-results.html
+          name: report
+          path: app/build/reports/lint-results-debug.html
 
 
