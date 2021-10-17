@@ -18,9 +18,6 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2.3.5
-        with:
-          repository: MohamedGElsharkawy/Android-CICD
-          token: ${{ secrets.MY_TOKEN || github.token }}
         
       - name: Setup Java JDK
         uses: actions/setup-java@v1
