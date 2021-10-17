@@ -1,5 +1,5 @@
 
-name: Build lint chekcer report
+name: Build lint checker report
 
 on:
   push:
