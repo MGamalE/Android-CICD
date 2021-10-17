@@ -1,6 +1,6 @@
 # This workflow to help you automate your building process
 
-name: CI
+name: Integrate Firebase Distributions + Github Actions
 
 # Controls when the workflow will run
 on:
@@ -30,4 +30,13 @@ jobs:
         with:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
-        
+          
+      - name: upload artifact to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.2.2
+        with:
+          appId: 'secrets.FIREBASE_ID'
+          token: 'secrets.FIREBASE_TOKEN'
+          groups: Android-CICD-Testers
+          releaseNotes: "Hey! This my first integrate Firebase distributions with Github Actions"
+          file: app/build/outputs/apk/debug/app-debug.apk   
+
