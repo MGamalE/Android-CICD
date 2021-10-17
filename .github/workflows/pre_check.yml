@@ -26,6 +26,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: index.html
-          path: app/build/reports/lint-report.html
+          path: app/lint-report.html
 
 
