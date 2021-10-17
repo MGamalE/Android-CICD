@@ -1,10 +1,7 @@
-# This workflow to help you automate your building process
 
-name: Integrate Firebase Distributions + Github Actions
+name: Build lint chekcer report
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
 
@@ -16,11 +13,6 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2.3.5
-        
-      - name: Setup Java JDK
-        uses: actions/setup-java@v1
-        with:
-         java-version: 1.8
         
       - name: Build Lint
         run: ./gradlew lintDebug
