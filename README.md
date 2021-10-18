@@ -44,23 +44,23 @@ If you want to know a brief definition fot the two terms CI/CD 🙆‍♂️, Ch
 
 > Deterimne one or more jobs / pipelines to run for the workflow, but you have to specifiy some parameters to run the job
 
-   * job_name 
+   * **job_name** 
 
    > Pick up your own job name
 
-   * runs_on
+   * **runs_on**
 
    > Specify your runner type
 
-   * steps
+   * **steps**
 
    > Represent a squence of tasks will be exceuted for each job / pipeline, each step have a some of parameters
 
-  * uses
+  * **uses**
 
    > One of step parameters, you can use it when your are trying to install enviornment or repository from marketplace 
 
-  * run
+  * **run**
 
    > One of step parameters, you can use it when your are trying to hit a command 
 
