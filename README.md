@@ -114,7 +114,7 @@ To get start with build CD piplines, you should integrate your app with **Fireba
 
 ### CD Example :partying_face:
 
-This workflow run build a debug AAP, then upload artifact APK to workflow dashboard and send another one to testers group on firebase distributions dashboard after each **Pull Request** on master branch 🚀
+This workflow builds a debug APK, then upload the artifact APK to a workflow dashboard and send another one to testers group on firebase distributions dashboard after each **Pull Request** on master branch 🚀
 
 ```
 name: Integrate Firebase Distributions + Github Actions
