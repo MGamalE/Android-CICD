@@ -29,18 +29,18 @@ jobs:
           path: app/build/reports/lint-results-debug.html
 
 
-    test:
-      needs: [lint]
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
+  test:
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-        - name: Run Unit Tests
-          run: ./gradlew test
+      - name: Run Unit Tests
+        run: ./gradlew test
 
-        - name: Upload Unit Test Report
-          uses: actions/upload-artifact@v2.2.4
-          with:
-            name: test-report
-            path: app/build/reports/tests/testDebugUnitTest/
+      - name: Upload Unit Test Report
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: test-report
+          path: app/build/reports/tests/testDebugUnitTest/
