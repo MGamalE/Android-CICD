@@ -167,6 +167,12 @@ jobs:
  #### Screenshot from firebase distribution dashboard after send the debug_app using Actions workflow
  ![Release](https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/release_apk.png)
 
+## Contributing
+Don't hesitate to contribute with any updates or improves, just fork this repository, make the change you'd like and then submit a pull request.
+
+## Issues
+Notice any issues with a repository? Please file a [Github Issue](https://github.com/MohamedGElsharkawy/Android-CICD/issues) in this repository.
+
 ## License
 
 ```
