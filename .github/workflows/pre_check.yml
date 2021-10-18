@@ -28,7 +28,6 @@ jobs:
           name: report
           path: app/build/reports/lint-results-debug.html
 
-
   test:
     needs: [lint]
     runs-on: ubuntu-latest
@@ -40,7 +39,24 @@ jobs:
         run: ./gradlew test
 
       - name: Upload Unit Test Report
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v2
         with:
           name: test-report
           path: app/build/reports/tests/testDebugUnitTest/
+
+  code_analysis:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
+      - name: Upload Code Anaylysis To SonarCloud
+        run: ./gradlew app:sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
