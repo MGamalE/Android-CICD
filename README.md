@@ -6,7 +6,7 @@ This repo demonstrates how to work on CI/CD for Mobile Apps :iphone: using Githu
 
 We are here setup a continious integration piplines using [**Github Actions**](https://github.com/features/actions) and a continious delivery using [**Firebase Distribution**](https://firebase.google.com/docs/app-distribution) ⚡ ⚡
 
-If you want to know a brief definition fot the two terms CI/CD 🙆‍♂️, Checkout out the qoutes :
+If you want to know a brief definition for the two terms CI/CD 🙆‍♂️, Checkout out the quotes :
 
   * [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
-        uses: actions/checkout@v2.3.5
+        uses: actions/checkout@v2
 
       - name: Setup Java JDK
         uses: actions/setup-java@v1
@@ -92,7 +92,7 @@ jobs:
         run: ./gradlew lintDebug
     
       - name: Upload Build Lint Report
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v2
         with:
           name: report
           path: app/build/reports/lint-results-debug.html
@@ -128,7 +128,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
-        uses: actions/checkout@v2.3.5
+        uses: actions/checkout@v2
         
       - name: Setup Java JDK
         uses: actions/setup-java@v1
@@ -139,12 +139,12 @@ jobs:
         run: ./gradlew build
     
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v2
         with:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
           
-      - name: upload artifact to Firebase App Distribution
+      - name: Upload Artifact To Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1.3.2
         with:
           appId: ${{ secrets.FIREBASE_ID }}
@@ -155,7 +155,7 @@ jobs:
 ```
 
 * Build Gradle : Build your APK.
-* [upload artifact to Firebase App Distribution](https://github.com/wzieba/Firebase-Distribution-Github-Action) : This action uploads artifacts (.apk,.aab) to Firebase App Distribution.
+* [Upload Artifact To Firebase App Distribution](https://github.com/wzieba/Firebase-Distribution-Github-Action) : This action uploads artifacts (.apk,.aab) to Firebase App Distribution.
 * appId : Get it from your project settings on firebase console.
 * token : Run this command `firebase login:ci`, for more informations about how to get your firbase token, check out [Firebase CLI](https://firebase.google.com/docs/cli)
 
@@ -164,10 +164,10 @@ jobs:
 
 
 
- #### Screenshot from firebase distribution dashboard after send the debug_app using Actions workflow
+ #### Screenshot from firebase distribution dashboard after sending the debug_app using Actions workflow
  ![Release](https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/release_apk.png)
 
-## Contributing
+## Contributing 
 Don't hesitate to contribute with any updates or improves, just fork this repository, make the change you'd like and then submit a pull request.
 
 ## Issues
