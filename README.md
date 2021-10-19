@@ -65,7 +65,7 @@ If you want to know a brief definition fot the two terms CI/CD 🙆‍♂️, Ch
    > One of step parameters, you can use it when your are trying to hit a command 
 
 
-### CI Example :partying_face:
+### CI Sample :partying_face:
 
 This workflow run as a lint checker for each **Pushing** on master branch :rocket:
 
@@ -112,7 +112,7 @@ To get start with build CD piplines, you should integrate your app with **Fireba
 > Firebase App Distribution makes distributing your apps to trusted testers painless. By getting your apps onto testers' devices quickly, you can get feedback early and often. 
 
 
-### CD Example :partying_face:
+### CD Sample :partying_face:
 
 This workflow builds a debug APK, then upload the artifact APK to a workflow dashboard and send another one to testers group on firebase distributions dashboard after each **Pull Request** on master branch 🚀
 
