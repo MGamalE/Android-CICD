@@ -4,7 +4,7 @@ This repo demonstrates how to work on CI/CD for Mobile Apps :iphone: using Githu
 
 # Getting Started 
 
-We are here setup a continious integration piplines using [**Github Actions**](https://github.com/features/actions) and a continious delivery using [**Firebase Distribution**](https://firebase.google.com/docs/app-distribution) ⚡ ⚡
+We are here setup a continious integration pipelines using [**Github Actions**](https://github.com/features/actions) and a continious delivery using [**Firebase Distribution**](https://firebase.google.com/docs/app-distribution) ⚡ ⚡
 
 If you want to know a brief definition for the two terms CI/CD 🙆‍♂️, Checkout out the quotes :
 
@@ -28,7 +28,7 @@ If you want to know a brief definition for the two terms CI/CD 🙆‍♂️, Ch
 
 ## Getting Started With CI ⚡
 
- To get start with build CI piplines, you should use **Actions tab** or create a new **YAML** file, then you could setup your workflow, please checkout [Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions) :monocle_face:
+ To get start with build CI pipelines, you should use **Actions tab** or create a new **YAML** file, then you could setup your workflow, please checkout [Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions) :monocle_face:
  
  ### How to create your own workflow 
 
@@ -107,7 +107,7 @@ jobs:
 
 ## Getting Started With CD ⚡
 
-To get start with build CD piplines, you should integrate your app with **Firebase Distribution**, then you could setup your workflow, please checkout [Firebase Distribution](https://firebase.google.com/docs/app-distribution) for more how to integrate your app with firebase :monocle_face:
+To get start with build CD pipelines, you should integrate your app with **Firebase Distribution**, then you could setup your workflow, please checkout [Firebase Distribution](https://firebase.google.com/docs/app-distribution) for more how to integrate your app with firebase :monocle_face:
 
 > Firebase App Distribution makes distributing your apps to trusted testers painless. By getting your apps onto testers' devices quickly, you can get feedback early and often. 
 
