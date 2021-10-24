@@ -57,6 +57,6 @@ jobs:
           java-version: 11
 
       - name: Upload Code Anaylysis To SonarCloud
-        run: ./gradlew app:sonarqube -Dsonar.login = "010529ac9ae790f51c8bf5b1da541c7d8e6884c7"
+        run: ./gradlew app:sonarqube -Dsonar.login="${{ secrets.SONAR_TOKEN }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
