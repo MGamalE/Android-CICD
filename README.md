@@ -166,6 +166,8 @@ jobs:
 
  #### Screenshot from firebase distribution dashboard after sending the debug_app using Actions workflow
  ![Release](https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/release_apk.png)
+ 
+ ### [How to integrate your project wih sonarcloud code analysis](https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/Sonar-Cloud.md)
 
 ## Contributing 
 Don't hesitate to contribute with any updates or improves, just fork this repository, make the change you'd like and then submit a pull request.
