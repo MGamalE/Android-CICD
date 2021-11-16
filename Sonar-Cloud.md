@@ -27,7 +27,7 @@ you select `only selected repositories` option, then determine your repository a
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project.png" width="500" height="300">	
 </p>
-	- If you have imported project before, and want to add a new one, from top header select `+` then `analyze new project`
+	- If you have imported project before, and want to add a new one, from top header select ``+`` then ``analyze new project``
 	
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project2.png" width="500" height="300">	
@@ -62,7 +62,7 @@ you select `only selected repositories` option, then determine your repository a
 </p>	
 
 
-* Back to your github repository, and add the action for sonarlcoud
+* Back to your github repository, and add this action for sonarlcoud job in your workflow
 ```
 - name: Upload Code Anaylysis To SonarCloud
         run: ./gradlew build sonarqube --info
