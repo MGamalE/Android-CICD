@@ -30,7 +30,7 @@ you select `only selected repositories` option, then determine your repository a
 	- If you have been imported any project before, and want to add a new one, from top header select + then `analyze new project`
 	
 <p align="start">
-<img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project2.png" width="800" height="500">	
+<img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project2.png" width="300" height="300">	
 </p>
 
 
@@ -51,7 +51,7 @@ you select `only selected repositories` option, then determine your repository a
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/config.png" width="800" height="500">	
 </p>	
 
-* You will be navigated to complete the integratation steps, first step copy the generated secret token, then stoe it in your `github repository/settings/secrets` with key name `SONAR_TOKEN`
+* You will be navigated to complete the integration steps, first step copy the generated secret token, then store it into your `github repository/settings/secrets` with key name `SONAR_TOKEN`
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/gen-secret.png" width="800" height="500">	
 </p>	
