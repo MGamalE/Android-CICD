@@ -27,7 +27,8 @@ you select `only selected repositories` option, then determine your repository a
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project.png" width="800" height="500">	
 </p>
-	- If you have been imported any project before, and want to add a new one, from top header select + then `analyze new project`
+
+  - If you have been imported any project before, and want to add a new one, from top header select `+` then `analyze new project`
 	
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/new-project2.png" width="300" height="300">	
@@ -41,7 +42,7 @@ you select `only selected repositories` option, then determine your repository a
 
 
 * Congrats :tada:, you have completed your setup, so now you have to disable your `Automatic analysis` from `project settings /Analysis method`, toggle `sonarcloud automatic analysis` to `off`
-	- `**Important: if you not disabled the automatic anaylsis optino your pipeline will not work**`
+	- **`Important: if you didn't disable the automatic anaylsis option your pipeline will not work`**
 <p align="start">
 <img src="https://github.com/MohamedGElsharkawy/Android-CICD/blob/master/screenshots/disable.png" width="800" height="500">	
 </p>	
